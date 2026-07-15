@@ -1,0 +1,17 @@
+{
+  "name": "Marées France",
+  "short_name": "Marées",
+  "description": "Marées, coefficients, marnage et phases de lune sur les côtes de France — hors-ligne.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1622",
+  "theme_color": "#0b1622",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
