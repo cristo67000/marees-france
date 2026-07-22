@@ -79,6 +79,16 @@ puis ouvrir http://localhost:8123
   dates) : sa prose est © DIRM NAMO et n'est pas reproduite ; les textes de
   présentation sont propres à l'app et les photos viennent de Commons.
 
+- **Me localiser** (bouton cible, optionnel) : au premier appui, un écran
+  explique à quoi sert la position **avant** l'invite du système ; une fois
+  l'autorisation accordée, l'app affiche votre point sur la carte, le **port**
+  et le **phare les plus proches** avec les distances à vol d'oiseau, et ouvre
+  la fiche marée du port. **Aucune donnée n'est envoyée** : la position est
+  comparée sur l'appareil aux coordonnées embarquées, rien n'est enregistré
+  (seul l'accord de principe l'est, pas de coordonnées), et l'app reste
+  entièrement utilisable sans géolocalisation. Nécessite HTTPS (ou localhost) :
+  en `file://` le navigateur refuse la géolocalisation, le message le dit.
+
 ## Précision (validée contre les tables officielles SHOM/maree.info)
 
 | Grandeur | Écart typique |

@@ -157,7 +157,7 @@ body {
 .dot .b-arrow { font-size: 9px; }
 
 /* ---------- boutons de couches ---------- */
-body.sheet-open #cal-btn,
+body.sheet-open #cal-btn, body.sheet-open #geo-btn,
 body.sheet-open #phare-btn, body.sheet-open #port-btn { display: none; }
 
 /* bouton ports (au-dessus des phares) */
@@ -209,6 +209,60 @@ body.sheet-open #phare-btn, body.sheet-open #port-btn { display: none; }
 }
 #phare-btn.off { opacity: .45; }
 #phare-btn.off svg { text-decoration: none; }
+
+/* bouton « me localiser » (au-dessus des ports) */
+#geo-btn {
+  position: fixed; right: 14px; bottom: calc(194px + env(safe-area-inset-bottom));
+  width: 48px; height: 48px; border-radius: 50%;
+  border: none; background: var(--surface); color: var(--ink-2);
+  box-shadow: var(--shadow); z-index: 600; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+#geo-btn.on { color: var(--teal); }
+/* Pendant la recherche, la cible tourne : la seule indication que l'appui a été pris
+   en compte tant que le navigateur n'a pas rendu sa réponse. */
+#geo-btn.busy svg { animation: geo-spin 1.1s linear infinite; }
+@keyframes geo-spin { to { transform: rotate(360deg); } }
+
+/* position de l'utilisateur sur la carte */
+.geo-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #4aa3dd; border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .35);
+}
+
+/* bandeau de message */
+#toast {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  max-width: min(92vw, 420px); z-index: 700;
+  background: var(--surface); color: var(--ink);
+  border-radius: 12px; box-shadow: var(--shadow);
+  padding: 11px 15px; font-size: 13.5px; line-height: 1.45;
+  cursor: pointer;
+}
+
+/* demande d'autorisation de géolocalisation */
+#geo-ask {
+  position: fixed; inset: 0; z-index: 800;
+  background: rgba(0, 0, 0, .55);
+  display: flex; align-items: center; justify-content: center; padding: 18px;
+}
+#geo-ask[hidden] { display: none; }
+#geo-card {
+  background: var(--surface); color: var(--ink);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  max-width: 380px; padding: 20px 20px 16px;
+}
+#geo-card h2 { font-size: 16px; margin-bottom: 10px; }
+#geo-card p { font-size: 13.5px; line-height: 1.5; margin-bottom: 10px; }
+#geo-card .geo-note { color: var(--ink-2); font-size: 12.5px; }
+#geo-actions { display: flex; gap: 10px; justify-content: flex-end;
+  margin-top: 14px; }
+#geo-actions button { border: none; border-radius: 10px; cursor: pointer;
+  font-size: 13.5px; font-weight: 600; padding: 9px 16px; }
+#geo-actions .btn-ghost { background: var(--surface-2); color: var(--ink-2); }
+#geo-actions .btn-main { background: var(--teal); color: var(--bg); }
 
 /* icône phare sur la carte */
 .ph-hit { position: relative; width: 36px; height: 36px; display: flex;

@@ -676,6 +676,126 @@
   $("#cal-close").addEventListener("click", closeCal);
   $("#moon").addEventListener("click", openCal);
 
+  // --- géolocalisation (optionnelle, traitement 100 % local) ---
+  // La position ne sert qu'à comparer, sur l'appareil, aux coordonnées des ports
+  // et des phares embarqués : rien n'est envoyé nulle part, rien n'est conservé
+  // (seul l'accord de principe de l'utilisateur est mémorisé, pas de coordonnées).
+  const toastEl = $("#toast");
+  let toastTimer = null;
+  function toast(msg, sticky) {
+    toastEl.textContent = msg;
+    toastEl.hidden = false;
+    clearTimeout(toastTimer);
+    // Les messages d'erreur restent affichés : ils demandent une action.
+    if (!sticky) toastTimer = setTimeout(() => { toastEl.hidden = true; }, 6000);
+  }
+  toastEl.addEventListener("click", () => { toastEl.hidden = true; });
+
+  function distKm(aLat, aLon, bLat, bLon) {
+    const R = 6371, r = Math.PI / 180;
+    const dLat = (bLat - aLat) * r, dLon = (bLon - aLon) * r;
+    const s = Math.sin(dLat / 2) ** 2 +
+      Math.cos(aLat * r) * Math.cos(bLat * r) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(s));
+  }
+  const fmtKm = (d) => d < 10
+    ? d.toLocaleString("fr-FR", { maximumFractionDigits: 1 }) + " km"
+    : Math.round(d) + " km";
+
+  let posLayer = null;
+  function onPosition(lat, lon, acc) {
+    if (posLayer) posLayer.remove();
+    posLayer = L.layerGroup([
+      L.circle([lat, lon], { radius: Math.min(acc || 100, 20000),
+        color: "#4aa3dd", weight: 1, fillOpacity: .12, interactive: false }),
+      L.marker([lat, lon], { interactive: false, icon: L.divIcon({
+        className: "", html: '<div class="geo-dot"></div>', iconSize: [14, 14] }) }),
+    ]).addTo(map);
+
+    const port = Tide.nearestPort(lat, lon);
+    const dPort = distKm(lat, lon, port.lat, port.lon);
+    let phare = null, dPhare = Infinity;
+    for (const f of PHARES) {
+      const d = distKm(lat, lon, f.lat, f.lon);
+      if (d < dPhare) { dPhare = d; phare = f; }
+    }
+
+    map.fitBounds(L.latLngBounds([[lat, lon], [port.lat, port.lon]]).pad(0.35),
+      { maxZoom: 10 });
+    let msg = `Port le plus proche : ${port.name} à ${fmtKm(dPort)}.`;
+    if (phare) msg += ` Phare le plus proche : ${phare.name} à ${fmtKm(dPhare)}.`;
+    if (dPort > 150) msg = "Vous êtes loin des côtes — " + msg;
+    toast(msg);
+    openSheet(port.id);
+  }
+
+  const GEO_BLOQUE = "Localisation bloquée pour cette application. Pour l'autoriser : " +
+    "icône à gauche de l'adresse (cadenas ou ⓘ) → Autorisations → Position → " +
+    "Autoriser, puis rechargez la page.";
+  const GEO_ERREURS = {
+    1: GEO_BLOQUE,
+    2: "Position indisponible. Vérifiez que la localisation est activée dans les " +
+       "réglages de l'appareil.",
+    3: "Délai dépassé. Réessayez, de préférence à l'extérieur ou près d'une fenêtre.",
+  };
+  const geoBtn = $("#geo-btn");
+  function busy(on) { geoBtn.classList.toggle("busy", on); }
+
+  function demanderPosition() {
+    busy(true);
+    toast("Recherche de votre position…", true);
+    navigator.geolocation.getCurrentPosition(
+      (p) => {
+        busy(false);
+        geoBtn.classList.add("on");
+        onPosition(p.coords.latitude, p.coords.longitude, p.coords.accuracy);
+      },
+      (err) => {
+        busy(false);
+        toast(GEO_ERREURS[err.code] || "Erreur de géolocalisation.", true);
+      },
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 }
+    );
+  }
+
+  function verifierPuisDemander() {
+    if (!("geolocation" in navigator)) {
+      toast("Géolocalisation non disponible sur cet appareil.", true); return;
+    }
+    // file:// et http distant : l'API existe mais échoue silencieusement.
+    if (!window.isSecureContext) {
+      toast("La géolocalisation exige une connexion sécurisée (HTTPS).", true); return;
+    }
+    // Permission déjà refusée : le navigateur n'affiche plus aucune invite et
+    // rappelle aussitôt le callback d'erreur — sans ce pré-contrôle, l'appui
+    // sur le bouton semblerait sans effet.
+    if (navigator.permissions && navigator.permissions.query) {
+      navigator.permissions.query({ name: "geolocation" })
+        .then((p) => { if (p.state === "denied") toast(GEO_BLOQUE, true);
+                       else demanderPosition(); })
+        .catch(demanderPosition);
+      return;
+    }
+    demanderPosition();
+  }
+
+  // Explication avant l'invite du système : l'utilisateur doit savoir à quoi sert
+  // sa position avant de décider. Une fois l'accord donné, on ne la redemande plus.
+  const geoAsk = $("#geo-ask");
+  $("#geo-allow").addEventListener("click", () => {
+    geoAsk.hidden = true;
+    localStorage.setItem("geoOk", "1");
+    verifierPuisDemander();
+  });
+  $("#geo-deny").addEventListener("click", () => { geoAsk.hidden = true; });
+  geoAsk.addEventListener("click", (e) => {
+    if (e.target === geoAsk) geoAsk.hidden = true;
+  });
+  geoBtn.addEventListener("click", () => {
+    if (localStorage.getItem("geoOk") === "1") verifierPuisDemander();
+    else geoAsk.hidden = false;
+  });
+
   // --- rafraîchissement périodique ---
   function tick() {
     refreshHeader();

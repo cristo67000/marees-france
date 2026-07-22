@@ -33,6 +33,10 @@
 
 <main id="map" role="application" aria-label="Carte des marées"></main>
 
+<button id="geo-btn" aria-label="Me localiser" title="Où suis-je ? Port et phare les plus proches">
+  <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm9 3h-2.07A7 7 0 0 0 13 5.07V3h-2v2.07A7 7 0 0 0 5.07 11H3v2h2.07A7 7 0 0 0 11 18.93V21h2v-2.07A7 7 0 0 0 18.93 13H21Z"/></svg>
+</button>
+
 <button id="port-btn" aria-label="Afficher ou masquer les ports" aria-pressed="true">
   <svg viewBox="0 0 24 24" width="22" height="22"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="5" r="2.1"/><path d="M12 7.4V20.2"/><path d="M8.2 10.6h7.6"/><path d="M4.6 13.2c.6 4.2 3.6 7 7.4 7s6.8-2.8 7.4-7"/><path d="M4.6 13.2l-1.7 1.6M4.6 13.2l2.3.5M19.4 13.2l1.7 1.6M19.4 13.2l-2.3.5"/></g></svg>
 </button>
@@ -117,6 +121,26 @@
   </div>
   <p id="disclaimer">Prédictions harmoniques indicatives — ne pas utiliser pour la navigation.</p>
 </section>
+
+<div id="toast" role="status" hidden></div>
+
+<div id="geo-ask" hidden>
+  <div id="geo-card" role="dialog" aria-modal="true" aria-labelledby="geo-ask-title">
+    <h2 id="geo-ask-title">Utiliser votre position ?</h2>
+    <p>Votre appareil va vous demander l'autorisation. Une fois accordée, la position
+      est comparée <strong>sur votre appareil</strong> aux coordonnées des ports et
+      des phares embarqués dans l'application, pour afficher les plus proches et les
+      marées du moment.</p>
+    <p class="geo-note">Aucune donnée n'est envoyée : ni serveur, ni développeur, ni
+      tiers. Rien n'est enregistré. L'application reste entièrement utilisable sans
+      géolocalisation, et l'autorisation se retire à tout moment dans les réglages
+      de l'appareil.</p>
+    <div id="geo-actions">
+      <button id="geo-deny" class="btn-ghost" type="button">Pas maintenant</button>
+      <button id="geo-allow" class="btn-main" type="button">Continuer</button>
+    </div>
+  </div>
+</div>
 
 <script src="lib/leaflet.js"></script>
 <script src="js/tide.js"></script>

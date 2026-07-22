@@ -1,6 +1,6 @@
 /* Service worker — cache-first : l'app fonctionne entièrement hors-ligne. */
 importScripts("./js/phares_extra.js"); // fournit PHARES_EXTRA (photos)
-const CACHE = "marees-france-v9";
+const CACHE = "marees-france-v10";
 const PHOTOS = Object.values(PHARES_EXTRA)
   .map((x) => x.img && "./" + x.img).filter(Boolean);
 const ASSETS = [
