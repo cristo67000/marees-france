@@ -104,6 +104,9 @@ sont pas prises en compte.
 ## Structure
 
 - `index.html`, `css/`, `js/` — l'application (zéro dépendance réseau)
+- `confidentialite.html` — politique de confidentialité (exigée par le Play
+  Store dès qu'une appli demande la position) ; retirée du fichier unique, où
+  le lien n'aurait pas de cible
 - `data/ports.json` — constantes harmoniques calées des 53 ports + table
   officielle des coefficients 2026
 - `data/france.geojson` — fond de carte embarqué

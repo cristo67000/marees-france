@@ -57,7 +57,12 @@ def _img(m):
 
 html = re.sub(r"photos/([a-z0-9-]+)\.jpg", _img, html)
 
+# confidentialite.html n'existe pas à côté du fichier unique : le lien pointerait
+# dans le vide. Le texte de la politique est de toute façon repris dans la boîte.
+html = re.sub(r'\s*<p class="geo-note geo-lien">.*?</p>', "", html, flags=re.S)
+
 assert "src=\"js/" not in html and "stylesheet" not in html, "inline incomplet"
+assert "confidentialite.html" not in html, "lien mort dans le fichier unique"
 
 out = os.path.join(ROOT, "dist", "marees-france.html")
 os.makedirs(os.path.dirname(out), exist_ok=True)
