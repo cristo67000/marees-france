@@ -9,6 +9,8 @@
     await (await fetch("data/france.geojson")).json();
   const rivers = window.RIVERS_DATA ||
     await (await fetch("data/rivers.json")).json();
+  const iles = window.ILES_DATA ||
+    await (await fetch("data/iles.json")).json();
   Tide.init(ports);
 
   const $ = (s) => document.querySelector(s);
@@ -51,6 +53,7 @@
   });
   L.geoJSON(france, { style: { className: "france-shape", stroke: true,
     weight: 1.2, fill: true, fillOpacity: 1 } }).addTo(map);
+
   function fitFrance() {
     map.invalidateSize();
     map.fitBounds([[42.2, -5.2], [51.2, 8.4]], { padding: [4, 4] });
@@ -81,7 +84,30 @@
     MAP_LABELS.coasts.forEach(c => addLabel("coast-lbl", c.name, c.lat, c.lon, 6.2));
     MAP_LABELS.rivers.forEach(r => addLabel("river-lbl", r.name, r.lat, r.lon, 6.2));
   }
+  // Îles absentes du fond de carte (data/iles.json) : bretonnes, Chausey, Yeu
+  // et anglo-normandes. Ces dernières ne sont pas françaises — teinte distincte.
+  // Les archipels (Glénan, Bréhat, Chausey) et les plus petites îles n'appa-
+  // raissent qu'en zoomant : à la vue nationale ce serait un semis illisible.
+  const ilePolys = [];
+  for (const ile of Object.values(iles)) {
+    const poly = L.polygon(ile.rings, {
+      className: ile.group === "anglo-normande"
+        ? "ile-shape ile-etrangere" : "ile-shape",
+      stroke: true, weight: 1, fill: true, fillOpacity: 1, interactive: false,
+    });
+    ilePolys.push({ poly, minZ: ile.minZ });
+    addLabel("ile-lbl", ile.name, ile.at[0], ile.at[1], ile.minZ + 0.75);
+  }
+  function updateIles() {
+    const z = map.getZoom() ?? 5;
+    for (const { poly, minZ } of ilePolys) {
+      if (z >= minZ && !map.hasLayer(poly)) poly.addTo(map);
+      else if (z < minZ && map.hasLayer(poly)) poly.remove();
+    }
+  }
+
   function updateLabels() {
+    updateIles();
     const z = map.getZoom() ?? 5;
     for (const { m, minZ, maxZ } of labelMarkers) {
       const show = z >= minZ && z < maxZ;

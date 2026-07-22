@@ -24,9 +24,12 @@ france = json.dumps(json.loads(read("data/france.geojson")),
                     separators=(",", ":"))
 rivers = json.dumps(json.loads(read("data/rivers.json")),
                     ensure_ascii=False, separators=(",", ":"))
+iles = json.dumps(json.loads(read("data/iles.json")),
+                  ensure_ascii=False, separators=(",", ":"))
 data_tag = ("<script>window.PORTS_DATA=" + ports +
             ";window.FRANCE_GEOJSON=" + france +
-            ";window.RIVERS_DATA=" + rivers + ";</script>")
+            ";window.RIVERS_DATA=" + rivers +
+            ";window.ILES_DATA=" + iles + ";</script>")
 
 # favicon en data-uri
 icon_b64 = base64.b64encode(read("icons/icon.svg").encode()).decode()

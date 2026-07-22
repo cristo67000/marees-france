@@ -47,6 +47,15 @@ puis ouvrir http://localhost:8123
 - **Couches à la carte** : deux boutons ronds (ancre = ports, phare = phares)
   activent/désactivent chaque couche ; le choix est mémorisé. Ports masqués,
   les phares profitent de toute la place.
+- **Îles** : le fond de carte ne comportait que le continent, la Corse, Ré,
+  Oléron, Noirmoutier et Belle-Île — les phares d'Ouessant, Sein ou Batz
+  flottaient sur de l'eau vide. Sont ajoutées **15 îles** (`data/iles.json`,
+  contours OpenStreetMap via `tools/fetch_iles.py`) : bretonnes (Ouessant,
+  Molène, Sein, Batz, Glénan, Groix, Houat, Hoëdic, Bréhat), Yeu, Chausey et
+  les **anglo-normandes** (Jersey, Guernesey, Aurigny, Sercq) — celles-ci d'une
+  teinte plus sourde et au trait pointillé, n'étant pas françaises. Elles
+  apparaissent à partir du zoom régional, comme les côtes nommées ; les petits
+  archipels attendent le zoom local.
 - **Habillage géographique** : les 10 grands fleuves (tracés réels Natural
   Earth : Seine, Somme, Loire, Vilaine, Charente, Garonne, Dordogne, Adour,
   Rhône, Aude), les mers et golfes (Manche, Atlantique, Méditerranée,
@@ -119,6 +128,8 @@ sont pas prises en compte.
 - `data/ports.json` — constantes harmoniques calées des 53 ports + table
   officielle des coefficients 2026
 - `data/france.geojson` — fond de carte embarqué
+- `data/iles.json` — contours des 15 îles ajoutées (bretonnes, anglo-normandes,
+  Yeu, Chausey), régénérable par `python tools/fetch_iles.py`
 - `lib/` — Leaflet 1.9.4 en local
 - `dist/marees-france.html` — version tout-en-un régénérable par
   `python tools/build_single.py`
