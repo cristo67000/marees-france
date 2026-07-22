@@ -1,4 +1,4 @@
-/* Marées France — interface. */
+/* Phares et Marées en France — interface. */
 "use strict";
 
 (async function () {
@@ -168,19 +168,38 @@
 
   // --- phares ---
   let pharesOn = localStorage.getItem("pharesOn") !== "0";
+  // déclaré ici (et non dans la section « fiche phare ») car refreshMarkers()
+  // l'utilise et s'exécute avant.
+  let openPhareId = null;
   const phareMarkers = new Map(); // id -> L.marker
-  const PHARE_SVG = `<svg viewBox="0 0 24 24" width="24" height="24">
+  const phareSvg = (s) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}">
     <g class="ph-rays"><path d="M7 6.4 3.6 5.1M17 6.4l3.4-1.3"/></g>
     <path class="ph-tower" d="M9.7 8.8h4.6l1.7 11.4H8z"/>
     <rect class="ph-lamp" x="9.3" y="4.9" width="5.4" height="3.9" rx="0.9"/>
     <g class="ph-bands"><path d="M9.35 12.4h5.3M8.85 15.9h6.3"/></g>
   </svg>`;
+
+  /* Icône d'un phare. Sélectionné, tout est agrandi d'un facteur k : la
+     boîte, le symbole et l'ancre — le point géographique reste donc au même
+     endroit relatif (50 % en x, 61 % en y), où se pose la pastille rouge.
+     On redimensionne réellement le SVG plutôt que d'appliquer un transform
+     CSS, que les navigateurs ignorent sur un <svg> racine. */
+  const PH_BOX = 36, PH_SVG = 24, PH_ANCH_Y = 22;
+  function phareIcon(f, sel) {
+    const k = sel ? 1.75 : 1;
+    const box = PH_BOX * k;
+    return L.divIcon({
+      className: "badge-wrap",
+      html: `<div class="ph-hit${sel ? " ph-sel" : ""}" data-id="${f.id}"` +
+            ` style="width:${box}px;height:${box}px">${phareSvg(PH_SVG * k)}</div>`,
+      iconSize: [box, box],
+      iconAnchor: [box / 2, PH_ANCH_Y * k],
+    });
+  }
+
   for (const f of (typeof PHARES !== "undefined" ? PHARES : [])) {
     const m = L.marker([f.lat, f.lon], {
-      icon: L.divIcon({ className: "badge-wrap", html:
-        `<div class="ph-hit" data-id="${f.id}">${PHARE_SVG}</div>`,
-        iconSize: [36, 36], iconAnchor: [18, 22] }),
-      keyboard: false, zIndexOffset: -100,
+      icon: phareIcon(f, false), keyboard: false, zIndexOffset: -100,
     });
     m.on("click", () => openPhare(f.id));
     phareMarkers.set(f.id, m);
@@ -250,20 +269,40 @@
     // phares : après les ports et les villes, dans l'espace libre
     const maxRank = z >= 7.5 ? 2 : z >= 6.4 ? 1 : 0;
     const phS = forceDots ? 20 : PH_S; // boîte plus tolérante en vue nationale
+    // le phare sélectionné passe en tête : il reste toujours visible
     const pharesByRank = (typeof PHARES !== "undefined" ? [...PHARES] : [])
-      .sort((a, b) => a.rank - b.rank);
+      .sort((a, b) => (b.id === openPhareId) - (a.id === openPhareId)
+                   || a.rank - b.rank);
     const showPh = new Set();
     for (const f of pharesByRank) {
-      if (!pharesOn || f.rank > maxRank) continue;
+      const choisi = f.id === openPhareId;
+      if (!choisi && (!pharesOn || f.rank > maxRank)) continue;
       const pt = map.latLngToContainerPoint([f.lat, f.lon]);
       const box = { x: pt.x - phS / 2, y: pt.y - phS / 2, w: phS, h: phS };
-      if (fits(box)) { kept.push(box); showPh.add(f.id); }
+      if (choisi || fits(box)) { kept.push(box); showPh.add(f.id); }
     }
     for (const [id, m] of phareMarkers) {
       if (showPh.has(id)) { if (!map.hasLayer(m)) m.addTo(map); }
       else if (map.hasLayer(m)) m.remove();
     }
+    applyPhareSelection();
     updateLabels();
+  }
+
+  /* Marque le phare ouvert : pastille rouge sur sa position + symbole agrandi. */
+  let phareSelAffiche = null;
+  function applyPhareSelection() {
+    if (phareSelAffiche === openPhareId) return;   // rien n'a changé
+    for (const id of [phareSelAffiche, openPhareId]) {
+      if (!id) continue;
+      const m = phareMarkers.get(id);
+      const f = PHARES.find(x => x.id === id);
+      if (!m || !f) continue;
+      const choisi = id === openPhareId;
+      m.setIcon(phareIcon(f, choisi));
+      m.setZIndexOffset(choisi ? 1000 : -100);
+    }
+    phareSelAffiche = openPhareId;
   }
   map.on("zoomend", refreshMarkers);
   refreshMarkers();
@@ -316,8 +355,7 @@
     $("#about-head").setAttribute("aria-expanded", String(!body.hidden));
   });
 
-  // --- fiche phare ---
-  let openPhareId = null;
+  // --- fiche phare --- (openPhareId est déclaré plus haut, avec les phares)
   let sigTimer = null;
 
   /* Animation du feu : construit les intervalles « allumé » sur une période,
@@ -377,6 +415,7 @@
     if (!f) return;
     closeSheet(); closeCal();
     openPhareId = id;
+    applyPhareSelection();
     const X = (typeof PHARES_EXTRA !== "undefined" && PHARES_EXTRA[id]) || {};
     $("#phare-name").textContent = f.name;
     $("#phare-loc").textContent =
@@ -401,8 +440,15 @@
     if (hM) chips.push(hM[0].replace(".", ","));
     else if (f.h) chips.push(`${String(f.h).replace(".", ",")} m`);
     if (X.marches) chips.push(`${X.marches} marches`);
-    const pM = X.portee && X.portee.match(/\d+[.,]?\d*\s*milles?/);
-    if (pM) chips.push(`portée ${pM[0]}`);
+    // portée : pour un feu à secteurs, on cite le secteur blanc (portée
+    // principale par convention), qui n'est pas toujours le premier cité.
+    if (X.portee) {
+      const blanc = X.portee.match(/(\d+[.,]?\d*)\s*milles?[^.;,]{0,26}blanc/i)
+                 || X.portee.match(/blanc[^.;,]{0,20}?(\d+[.,]?\d*)\s*milles?/i);
+      const prem = X.portee.match(/(\d+[.,]?\d*)\s*milles?/);
+      const val = (blanc && blanc[1]) || (prem && prem[1]);
+      if (val) chips.push(`portée ${val} milles`);
+    }
     if (f.year) chips.push(`allumé en ${f.year}`);
     chips.push(f.sea ? "🌊 en mer" : "à terre");
     $("#phare-meta").innerHTML = chips.map(x =>
@@ -428,6 +474,7 @@
   }
   function closePhare() {
     openPhareId = null;
+    applyPhareSelection();
     stopSignal();
     $("#phare-sheet").classList.remove("open");
     if (!openPortId) document.body.classList.remove("sheet-open");

@@ -1,6 +1,6 @@
 /* Service worker — cache-first : l'app fonctionne entièrement hors-ligne. */
 importScripts("./js/phares_extra.js"); // fournit PHARES_EXTRA (photos)
-const CACHE = "marees-france-v6";
+const CACHE = "marees-france-v9";
 const PHOTOS = Object.values(PHARES_EXTRA)
   .map((x) => x.img && "./" + x.img).filter(Boolean);
 const ASSETS = [
@@ -15,7 +15,11 @@ const ASSETS = [
 ];
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
+  /* `cache: 'reload'` contourne le cache HTTP du navigateur. Sans lui, addAll()
+ * remplit le cache neuf avec les réponses périmées encore détenues par le
+ * navigateur : le nouveau service worker fige alors la version précédente. */
+  e.waitUntil(caches.open(CACHE).then((c) =>
+    c.addAll(ASSETS.map((u) => new Request(u, { cache: "reload" })))));
   self.skipWaiting();
 });
 

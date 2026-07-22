@@ -1,4 +1,4 @@
-# Marées France 🌊
+# Phares et Marées en France 🌊
 
 Application de marées **hors-ligne** pour smartphone : carte de France des côtes,
 horaires de pleine/basse mer, coefficient de marée, marnage et phase de lune —
@@ -60,16 +60,24 @@ puis ouvrir http://localhost:8123
   lune dessinée jour par jour, % d'éclairement, coefficients, prochaines
   pleine/nouvelle lunes. Les heures s'adaptent au lieu (port ouvert ou centre
   de la carte).
-- **Phares** : 53 phares emblématiques (Cordouan, Créac'h, la Jument, Ar-Men,
-  l'île Vierge…) apparaissent en zoomant sur la côte (icône tour + faisceaux ;
-  le bouton phare les masque/affiche). Toucher un phare ouvre sa fiche :
-  **photo** (Wikimedia Commons, crédit affiché, toucher pour agrandir),
-  localisation, **hauteur, nombre de marches, portée, dates de construction et
-  de mise en service, optique**, anecdote, et une **animation de la lanterne
-  qui rejoue le vrai rythme du feu** (« 2 éclats blancs, 10 s », occultations,
-  isophase… couleur comprise). Un bouton renvoie vers les marées du port le
-  plus proche. Les ports gardent la priorité d'affichage : aucun chevauchement.
-  Données et photos récoltées par `tools/fetch_phares.py` (Wikipédia/Commons).
+- **Phares** : **103 phares** (Cordouan, Créac'h, la Jument, Ar-Men, l'île
+  Vierge, les Roches-Douvres, Tévennec, Nividic…) apparaissent en zoomant sur
+  la côte (icône tour + faisceaux ; le bouton phare les masque/affiche).
+  Toucher un phare ouvre sa fiche : **photo** (Wikimedia Commons, crédit
+  affiché, toucher pour agrandir), localisation, **hauteur, nombre de marches,
+  portée, dates de construction et de mise en service, optique**, anecdote, et
+  une **animation de la lanterne qui rejoue le vrai rythme du feu**
+  (« 2 éclats blancs, 10 s », occultations, isophase… couleur comprise). Un
+  bouton renvoie vers les marées du port le plus proche. Les ports gardent la
+  priorité d'affichage : aucun chevauchement.
+
+  Sources : `tools/fetch_phares.py` (Wikipédia/Commons) pour la sélection
+  initiale, et `tools/parse_livret.py` + `fetch_livret.py` + `gen_livret.py`
+  pour les **68 phares et feux de Bretagne et Pays de la Loire** du livret
+  officiel **DIRM NAMO** (éd. déc. 2025) — dont 48 ajoutés. Du livret ne sont
+  reprises que les **données factuelles** (hauteur, feu, portée, optique,
+  dates) : sa prose est © DIRM NAMO et n'est pas reproduite ; les textes de
+  présentation sont propres à l'app et les photos viennent de Commons.
 
 ## Précision (validée contre les tables officielles SHOM/maree.info)
 

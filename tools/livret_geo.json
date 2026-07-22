@@ -1,0 +1,441 @@
+{
+ "pierre-herpin": {
+  "n": 1,
+  "wiki": "Phare de la Pierre-de-Herpin",
+  "lat": 48.729444,
+  "lon": -1.815,
+  "img": "photos/pierre-herpin.jpg",
+  "credit": "Alan Hughes, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "rochebonne": {
+  "n": 2,
+  "wiki": "Phare de Rochebonne",
+  "lat": 48.67111,
+  "lon": -1.97833,
+  "img": "photos/rochebonne.jpg",
+  "credit": "JGS25, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "balue": {
+  "n": 3,
+  "wiki": "Phare de la Balue",
+  "lat": 48.626667,
+  "lon": -2.003889,
+  "img": null,
+  "credit": null,
+  "suspect": false
+ },
+ "bas-sablons": {
+  "n": 4,
+  "wiki": "Phare des Bas-Sablons",
+  "lat": 48.636111,
+  "lon": -2.021667,
+  "img": "photos/bas-sablons.jpg",
+  "credit": "Remi Jouan, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "grand-jardin": {
+  "n": 5,
+  "wiki": "Phare du Grand Jardin",
+  "lat": 48.670028,
+  "lon": -2.08278,
+  "img": "photos/grand-jardin.jpg",
+  "credit": "Pline, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "grand-lejon": {
+  "n": 7,
+  "wiki": "Phare du Grand Léjon",
+  "lat": 48.74833,
+  "lon": -2.66472,
+  "img": "photos/grand-lejon.jpg",
+  "credit": "KarlBlohm, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "rosedo": {
+  "n": 8,
+  "wiki": "Phare du Rosédo",
+  "lat": 48.8575,
+  "lon": -3.00333,
+  "img": "photos/rosedo.jpg",
+  "credit": "Raphodon, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "roches-douvres": {
+  "n": 9,
+  "wiki": "Phare des Roches-Douvres",
+  "lat": 49.105,
+  "lon": -2.8139,
+  "img": "photos/roches-douvres.jpg",
+  "credit": "Roches_Douvres.jpg: Clément Delafargue\nderivative work: Jota, CC BY-SA 2.0",
+  "suspect": false
+ },
+ "bodic": {
+  "n": 11,
+  "wiki": "Phare de Bodic",
+  "lat": 48.8123605,
+  "lon": -3.0909294,
+  "img": "photos/bodic.jpg",
+  "credit": "CC BY-SA 2.5",
+  "suspect": false
+ },
+ "triagoz": {
+  "n": 14,
+  "wiki": "Phare des Triagoz",
+  "lat": 48.87139,
+  "lon": -3.64639,
+  "img": "photos/triagoz.jpg",
+  "credit": "Guy Marty, CC BY-SA 1.0",
+  "suspect": false
+ },
+ "la-lande": {
+  "n": 15,
+  "wiki": "Phare de la Lande",
+  "lat": 48.63694,
+  "lon": -3.88528,
+  "img": "photos/la-lande.jpg",
+  "credit": "Jlucnet, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "roscoff-ph": {
+  "n": 16,
+  "wiki": "Phare de Roscoff",
+  "lat": 48.7225,
+  "lon": -3.98055556,
+  "img": "photos/roscoff-ph.jpg",
+  "credit": "Thesupermat, CC BY-SA 2.5",
+  "suspect": false
+ },
+ "pontusval": {
+  "n": 18,
+  "wiki": "Phare de Pontusval",
+  "lat": 48.677938,
+  "lon": -4.346478,
+  "img": "photos/pontusval.jpg",
+  "credit": "Steffen Heilfort, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "lanvaon": {
+  "n": 19,
+  "wiki": "Phare de Lanvaon",
+  "lat": 48.61,
+  "lon": -4.53556,
+  "img": "photos/lanvaon.jpg",
+  "credit": "PIERRE ANDRE LECLERCQ, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "ile-wrach": {
+  "n": 21,
+  "wiki": "Phare de l'île Wrac'h",
+  "lat": 48.614722,
+  "lon": -4.575833,
+  "img": "photos/ile-wrach.jpg",
+  "credit": "Yann Caradec from Paris, France, CC BY-SA 2.0",
+  "suspect": false
+ },
+ "nividic": {
+  "n": 26,
+  "wiki": "Phare de Nividic",
+  "lat": 48.44556,
+  "lon": -5.15083,
+  "img": "photos/nividic.jpg",
+  "credit": "Samuel Lamotte d'Incamps, CC BY-SA 2.0 fr",
+  "suspect": false
+ },
+ "lanildut": {
+  "n": 28,
+  "wiki": "Feu de l'Aber-Ildut",
+  "lat": 48.471119,
+  "lon": -4.759188,
+  "img": "photos/lanildut.jpg",
+  "credit": "A.Dechorgnat, CC BY 3.0",
+  "suspect": false,
+  "approx": false
+ },
+ "trezien": {
+  "n": 29,
+  "wiki": "Phare de Trézien",
+  "lat": 48.42361,
+  "lon": -4.77889,
+  "img": "photos/trezien.jpg",
+  "credit": "Eric Gaba (Sting - fr:Sting), CC BY-SA 3.0",
+  "suspect": false
+ },
+ "kermorvan": {
+  "n": 30,
+  "wiki": "Phare de Kermorvan",
+  "lat": 48.36194,
+  "lon": -4.78972,
+  "img": "photos/kermorvan.jpg",
+  "credit": "Julien Carnot, CC BY-SA 2.0",
+  "suspect": false
+ },
+ "pierres-noires": {
+  "n": 31,
+  "wiki": "Phare des Pierres Noires",
+  "lat": 48.31111111,
+  "lon": -4.91444444,
+  "img": "photos/pierres-noires.jpg",
+  "credit": "Julien Carnot, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "portzic": {
+  "n": 34,
+  "wiki": "Phare du Portzic",
+  "lat": 48.3583,
+  "lon": -4.53417,
+  "img": "photos/portzic.jpg",
+  "credit": "User:Pline, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "millier": {
+  "n": 35,
+  "wiki": "Phare du Millier",
+  "lat": 48.09861,
+  "lon": -4.46556,
+  "img": "photos/millier.jpg",
+  "credit": "Calcineur, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "tevennec": {
+  "n": 36,
+  "wiki": "Phare du Tévennec",
+  "lat": 48.06972,
+  "lon": -4.79333,
+  "img": "photos/tevennec.jpg",
+  "credit": "Christinarmen, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "goulenez": {
+  "n": 38,
+  "wiki": "Île de Sein",
+  "lat": 48.0367,
+  "lon": -4.8494,
+  "img": null,
+  "credit": null,
+  "suspect": false,
+  "approx": true
+ },
+ "sainte-marine": {
+  "n": 41,
+  "wiki": "Phare de Sainte-Marine",
+  "lat": 47.8643,
+  "lon": -4.11303,
+  "img": "photos/sainte-marine.jpg",
+  "credit": "STÉPHANE DÉNIEL, CC BY-SA 2.5",
+  "suspect": false
+ },
+ "benodet": {
+  "n": 42,
+  "wiki": "Phare de Bénodet",
+  "lat": 47.875,
+  "lon": -4.11278,
+  "img": "photos/benodet.jpg",
+  "credit": "STÉPHANE DÉNIEL, CC BY-SA 2.5",
+  "suspect": false
+ },
+ "moutons": {
+  "n": 43,
+  "wiki": "Phare de l'île aux Moutons",
+  "lat": 47.77444,
+  "lon": -4.0278,
+  "img": "photos/moutons.jpg",
+  "credit": "Julien Carnot, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "penfret": {
+  "n": 44,
+  "wiki": "Phare de Penfret",
+  "lat": 47.72111111,
+  "lon": -3.95305556,
+  "img": "photos/penfret.jpg",
+  "credit": "Pquline, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "pen-men": {
+  "n": 45,
+  "wiki": "Phare de Pen-Men",
+  "lat": 47.6475,
+  "lon": -3.509166,
+  "img": "photos/pen-men.jpg",
+  "credit": "Pline, CC BY-SA 3.0",
+  "suspect": false,
+  "approx": false
+ },
+ "pointe-des-chats": {
+  "n": 46,
+  "wiki": "Phare de la pointe des Chats",
+  "lat": 47.620748,
+  "lon": -3.421515,
+  "img": "photos/pointe-des-chats.jpg",
+  "credit": "Bruno Corpet (Quoique), CC BY-SA 4.0",
+  "suspect": false
+ },
+ "port-maria": {
+  "n": 47,
+  "wiki": "Phare de Port-Maria",
+  "lat": 47.479444,
+  "lon": -3.124167,
+  "img": "photos/port-maria.jpg",
+  "credit": "Remi Jouan, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "teignouse": {
+  "n": 48,
+  "wiki": "Phare de la Teignouse",
+  "lat": 47.4575,
+  "lon": -3.04583,
+  "img": "photos/teignouse.jpg",
+  "credit": "Pline, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "kerdonis": {
+  "n": 52,
+  "wiki": "Phare de Kerdonis",
+  "lat": 47.31,
+  "lon": -3.05944,
+  "img": "photos/kerdonis.jpg",
+  "credit": "Remi Jouan, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "grands-cardinaux": {
+  "n": 53,
+  "wiki": "Phare des Grands Cardinaux",
+  "lat": 47.32111,
+  "lon": -2.835,
+  "img": "photos/grands-cardinaux.jpg",
+  "credit": "CC BY-SA 1.0",
+  "suspect": false
+ },
+ "penlan": {
+  "n": 54,
+  "wiki": "Phare de Penlan",
+  "lat": 47.51639,
+  "lon": -2.50194,
+  "img": "photos/penlan.jpg",
+  "credit": "L’auteur n’a pas pu être identifié automatiquement. Il est s, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "four-croisic": {
+  "n": 55,
+  "wiki": "Phare du plateau du Four",
+  "lat": 47.29778,
+  "lon": -2.63417,
+  "img": "photos/four-croisic.jpg",
+  "credit": "Arnaud Devorsine (Yggdrasill74), CC BY-SA 3.0",
+  "suspect": false,
+  "approx": false
+ },
+ "morees": {
+  "n": 56,
+  "wiki": "Balise des Morées",
+  "lat": 47.2508,
+  "lon": -2.2169,
+  "img": "photos/morees.jpg",
+  "credit": "Ludovic Péron, CC BY-SA 4.0",
+  "suspect": false,
+  "approx": false
+ },
+ "aiguillon": {
+  "n": 57,
+  "wiki": "Phare d'Aiguillon",
+  "lat": 47.24222,
+  "lon": -2.26306,
+  "img": "photos/aiguillon.jpg",
+  "credit": "Whiteredge, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "grand-charpentier": {
+  "n": 58,
+  "wiki": "Phare du Grand-Charpentier",
+  "lat": 47.21361,
+  "lon": -2.31889,
+  "img": "photos/grand-charpentier.jpg",
+  "credit": "Arnaud 25, CC0",
+  "suspect": false
+ },
+ "banche": {
+  "n": 59,
+  "wiki": "Phare de la Banche",
+  "lat": 47.177222,
+  "lon": -2.4675,
+  "img": "photos/banche.jpg",
+  "credit": "Julien cantin, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "pointe-saint-gildas": {
+  "n": 60,
+  "wiki": "Phare de la pointe Saint-Gildas",
+  "lat": 47.133611,
+  "lon": -2.245833,
+  "img": "photos/pointe-saint-gildas.jpg",
+  "credit": "Oblomov2, CC0",
+  "suspect": false
+ },
+ "pointe-des-dames": {
+  "n": 62,
+  "wiki": "Phare de la pointe des Dames",
+  "lat": 47.0111,
+  "lon": -2.22111,
+  "img": "photos/pointe-des-dames.jpg",
+  "credit": "Stedewa, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "fromentine": {
+  "n": 63,
+  "wiki": "Fromentine",
+  "lat": 46.891,
+  "lon": -2.137,
+  "img": null,
+  "credit": null,
+  "suspect": false,
+  "approx": true
+ },
+ "yeu": {
+  "n": 64,
+  "wiki": "Phare de l'île d'Yeu",
+  "lat": 46.7175,
+  "lon": -2.38194,
+  "img": "photos/yeu.jpg",
+  "credit": "Peyot, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "corbeaux": {
+  "n": 65,
+  "wiki": "Phare de la pointe des Corbeaux",
+  "lat": 46.69,
+  "lon": -2.285,
+  "img": "photos/corbeaux.jpg",
+  "credit": "Peyot, CC BY-SA 3.0",
+  "suspect": false,
+  "approx": false
+ },
+ "barges": {
+  "n": 66,
+  "wiki": "Phare des Barges",
+  "lat": 46.495,
+  "lon": -1.84194,
+  "img": "photos/barges.jpg",
+  "credit": "GabrielBts, CC BY-SA 4.0",
+  "suspect": false
+ },
+ "armandeche": {
+  "n": 67,
+  "wiki": "Phare de l'Armandèche",
+  "lat": 46.48972,
+  "lon": -1.80472,
+  "img": "photos/armandeche.jpg",
+  "credit": "Jlucnet, CC BY-SA 3.0",
+  "suspect": false
+ },
+ "grouin-du-cou": {
+  "n": 68,
+  "wiki": "Phare du Grouin du Cou",
+  "lat": 46.3444,
+  "lon": -1.46361,
+  "img": "photos/grouin-du-cou.jpg",
+  "credit": "Minou85, CC BY-SA 3.0",
+  "suspect": false
+ }
+}

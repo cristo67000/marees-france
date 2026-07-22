@@ -1,4 +1,4 @@
-/* Marées France — thème marin sombre, mobile d'abord. */
+/* Phares et Marées en France — thème marin sombre, mobile d'abord. */
 :root {
   --bg: #0b1622;
   --surface: #13212f;
@@ -211,9 +211,22 @@ body.sheet-open #phare-btn, body.sheet-open #port-btn { display: none; }
 #phare-btn.off svg { text-decoration: none; }
 
 /* icône phare sur la carte */
-.ph-hit { width: 36px; height: 36px; display: flex;
+.ph-hit { position: relative; width: 36px; height: 36px; display: flex;
   align-items: flex-end; justify-content: center;
   filter: drop-shadow(0 1px 3px rgba(0,0,0,.5)); }
+
+/* Phare sélectionné : le symbole est agrandi côté JS (SVG redimensionné),
+   et une pastille rouge marque sa position exacte. Le point géographique
+   correspond à l'iconAnchor, soit 50 % en x et 22/36 = 61,1 % en y de la
+   boîte — en pourcentage, la pastille reste juste à toute taille. */
+.ph-hit.ph-sel::after {
+  content: "";
+  position: absolute; left: 50%; top: 61.1%;
+  width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px;
+  border-radius: 50%;
+  background: #e6332a; border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .45), 0 0 10px 2px rgba(230, 51, 42, .7);
+}
 .ph-tower { fill: #e9eef4; }
 .ph-lamp { fill: #ffd54a; }
 .ph-bands path { stroke: #d64541; stroke-width: 2.6; fill: none; }

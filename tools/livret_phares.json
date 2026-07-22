@@ -1,0 +1,1292 @@
+[
+ {
+  "n": 1,
+  "nom": "Pierre de Herpin",
+  "page": 5,
+  "dep": "Ille-et-Vilaine",
+  "hauteur": "23,77 mètres",
+  "feu": "blanc à rythme isophase toutes les quatre secondes",
+  "portee": "12 milles",
+  "optique": "horizon 360°, distance focale : 0,5 mètre, lampe à leds pour les deux feux, principal et de secours 5",
+  "annees": [
+   1861,
+   1864,
+   1876,
+   1882
+  ],
+  "allumage": 1882,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 2,
+  "nom": "Rochebonne",
+  "page": 6,
+  "dep": "Ille-et-Vilaine",
+  "hauteur": "19,90 mètres",
+  "feu": "fixe rouge",
+  "portee": "24 milles",
+  "optique": "de direction, distance focale : 0,5 mètre, lampe de 70 watts",
+  "annees": [
+   1868,
+   1944,
+   1948,
+   1951,
+   1975
+  ],
+  "allumage": 1951,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 3,
+  "nom": "Balue",
+  "page": 7,
+  "dep": "Ille-et-Vilaine",
+  "hauteur": "36,60 mètres",
+  "feu": "directionnel fixe vert",
+  "portee": "25 milles",
+  "optique": "de direction, distance focale : 0,5 m, lampe de 150 watts",
+  "annees": [
+   1868,
+   1874,
+   1875,
+   1907,
+   1926,
+   1944,
+   1948
+  ],
+  "allumage": 1868,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 4,
+  "nom": "Bas Sablons",
+  "page": 8,
+  "dep": "Ille-et-Vilaine",
+  "hauteur": "19,50 mètres",
+  "feu": "fixe vert",
+  "portee": "20 milles",
+  "optique": "de direction, lampe de 70 watts",
+  "annees": [
+   1868,
+   1877
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 5,
+  "nom": "Grand Jardin",
+  "page": 9,
+  "dep": "Ille-et-Vilaine",
+  "hauteur": "32,70 mètres",
+  "feu": "à deux éclats rouges toutes les 10 secondes",
+  "portee": "17 milles",
+  "optique": "d'horizon, distance focale : 0,35 m, lampe à dels de 15 watts",
+  "annees": [
+   1865,
+   1868,
+   1944,
+   1949,
+   1950,
+   1978,
+   1982,
+   2012
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 6,
+  "nom": "Cap Fréhel",
+  "page": 10,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "32,85 mètres",
+  "feu": "blanc à deux éclats groupés toutes les dix secondes",
+  "portee": "29 milles",
+  "optique": "tournante à quatre panneaux, distance focale : 0,50 m, lampe de 250 watts",
+  "annees": [
+   1650,
+   1702,
+   1844,
+   1847,
+   1944,
+   1950,
+   2011
+  ],
+  "allumage": 1847,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 7,
+  "nom": "Grand Léjon",
+  "page": 11,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "24,80 mètres",
+  "feu": "à secteurs, trois éclats groupés toutes les 12 secondes",
+  "portee": "11 milles dans les secteurs blancs, 10 milles dans les secteurs rouges",
+  "optique": "feu industriel à éclats",
+  "annees": [
+   1859,
+   1862,
+   1880,
+   1881,
+   1960
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 8,
+  "nom": "Rosédo",
+  "page": 12,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "13 mètres",
+  "feu": "à éclats blancs réguliers toutes les cinq secondes",
+  "portee": "20 milles",
+  "optique": "tournante à quatre panneaux, distance focale : 0,15 m, lampe de 70 watts Le fanal du phare",
+  "annees": [
+   1860,
+   1947,
+   1949,
+   2001
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 9,
+  "nom": "Roches-Douvres",
+  "page": 13,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "64,60 mètres",
+  "feu": "blanc à éclats réguliers tournant toutes les cinq secondes",
+  "portee": "24 milles",
+  "optique": "double, tournante, quatre panneaux, distance focale 0,30 m, deux lampes de 70 watts",
+  "annees": [
+   1867,
+   1869,
+   1944,
+   1947,
+   1954,
+   2017
+  ],
+  "allumage": 1954,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 10,
+  "nom": "Héaux de Bréhat",
+  "page": 14,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "56,60 mètres",
+  "feu": "à secteurs, quatre éclats groupés toutes les 15 secondes",
+  "portee": "15 milles dans les secteurs blanc, 11 milles dans les secteurs rouge et vert",
+  "optique": "d'horizon, distance focale 0,50 m, lampe à dels de 29 watts",
+  "annees": [
+   1837,
+   1840,
+   1944,
+   1947,
+   1949,
+   1979,
+   1982,
+   2011
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 11,
+  "nom": "Bodic",
+  "page": 15,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "23 mètres",
+  "feu": "feu scintillant blanc",
+  "portee": "22 milles",
+  "optique": "de direction, distance focale : 0,15 m, lampe à dels de 29 watts",
+  "annees": [
+   1867,
+   1948
+  ],
+  "allumage": 1867,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 12,
+  "nom": "Sept-Îles",
+  "page": 16,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "19,85 mètres",
+  "feu": "trois éclats blancs groupés en 20 secondes",
+  "portee": "23 milles",
+  "optique": "tournante, distance focale : 0,3 m, lampe de 70 watts",
+  "annees": [
+   1832,
+   1835,
+   1853,
+   1854,
+   1944,
+   1949,
+   1952
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 13,
+  "nom": "Mean Ruz",
+  "page": 17,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "15 mètres",
+  "feu": "à secteurs, occultation toutes les 4 secondes",
+  "portee": "12 milles dans le blanc, 9 milles dans le rouge",
+  "optique": "tout horizon, distance focale : 0,25 m, lampe à dels de 11 watts Le feu, dit phare de Ploumanac'h, construit en granite rose, indique l'entrée de la passe menant au port de Ploumanac'h à Perros- Guirec, en alignement avec le feu de Kerjean",
+  "annees": [
+   1853,
+   1944,
+   1947
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 14,
+  "nom": "Triagoz",
+  "page": 18,
+  "dep": "Côtes-d'Armor",
+  "hauteur": "29 mètres",
+  "feu": "deux éclats groupés toutes les six secondes",
+  "portee": "14 milles dans le secteur blanc et 11 milles dans le secteur rouge",
+  "optique": "d'horizon, distance focale : 0,25 m, lampe à dels de 75 watts",
+  "annees": [
+   1861,
+   1864,
+   2017
+  ],
+  "allumage": 1864,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 15,
+  "nom": "Lande",
+  "page": 19,
+  "dep": "Finistère",
+  "hauteur": "20,30 mètres",
+  "feu": "blanc à éclats réguliers tournant en cinq secondes",
+  "portee": "23 milles",
+  "optique": "tournante, distance focale : 0,25 m, lampe de 70 watts La maison-feu est située sur les hauteurs du fond de la rade de Morlaix. Elle doit cet emplacement à Charles Cornic-Duchesne, un marin et hydrographe morlaisien. Très impliqué dans la s",
+  "annees": [
+   1775,
+   1841,
+   1844,
+   1845
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 16,
+  "nom": "Roscoff",
+  "page": 20,
+  "dep": "Finistère",
+  "hauteur": "24,40 mètres",
+  "feu": "blanc, à trois occultations groupées toutes les 12 secondes",
+  "portee": "15 milles",
+  "optique": "fixe d'horizon, distance focale : 0,30 m, lampe 75 watts",
+  "annees": [
+   1914,
+   1934
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 17,
+  "nom": "Île de Batz",
+  "page": 21,
+  "dep": "Finistère",
+  "hauteur": "42,60 mètres",
+  "feu": "blanc à quatre éclats groupés toutes les 25 secondes",
+  "portee": "23 milles",
+  "optique": "de direction, distance focale : 0,35 m, lampe de 70 watts",
+  "annees": [
+   1705,
+   1716,
+   1836,
+   2017,
+   2022
+  ],
+  "allumage": 1836,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 18,
+  "nom": "Pontusval",
+  "page": 22,
+  "dep": "Finistère",
+  "hauteur": "12,9 mètres",
+  "feu": "blanc et rouge à trois occultations groupées toutes les 12 secondes",
+  "portee": "12 milles",
+  "optique": "d'horizon 360° en verre taillé, distance focale : 0,18 m, lampe à dels de 29 watts C'est à la suite de 10 naufrages recensés entre 1856 et 1865 que la maison-feu de Pontusval est construite au nord-ouest du port de Pontusval, à l'extrémité",
+  "annees": [
+   1856,
+   1865,
+   1869,
+   1950,
+   2011
+  ],
+  "allumage": 1869,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 19,
+  "nom": "Lanvaon",
+  "page": 23,
+  "dep": "Finistère",
+  "hauteur": "27 mètres",
+  "feu": "scintillant blanc",
+  "portee": "13 milles",
+  "optique": "de direction à divergence 15°, lampe à dels de 2,8 watts",
+  "annees": [
+   1868
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 20,
+  "nom": "Île Vierge",
+  "page": 24,
+  "dep": "Finistère",
+  "hauteur": "82,50 mètres",
+  "feu": "à éclats blancs réguliers, toutes les cinq secondes",
+  "portee": "26 milles",
+  "optique": "tournante à quatre panneaux, distance focale : 0,5 m, lampe de 250 watts",
+  "annees": [
+   1507,
+   1845,
+   1902,
+   2011
+  ],
+  "allumage": 1845,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 21,
+  "nom": "Île Wrac'h",
+  "page": 25,
+  "dep": "Finistère",
+  "hauteur": "12,75 mètres",
+  "feu": "rouge scintillant toutes les 1,2 seconde",
+  "portee": "7 milles",
+  "optique": "d'horizon 360° en verre moulé, distance focale : 0,1 m, lampe à dels de 15 watts",
+  "annees": [
+   1845,
+   1947,
+   1949,
+   1973,
+   1993
+  ],
+  "allumage": 1947,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 22,
+  "nom": "Four",
+  "page": 26,
+  "dep": "Finistère",
+  "hauteur": "28 mètres",
+  "feu": "blanc à cinq éclats groupés toutes les 15 secondes",
+  "portee": "23 milles",
+  "optique": "tournante, lampe de 70 watts",
+  "annees": [
+   1869,
+   1873,
+   1874,
+   2017
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 23,
+  "nom": "La Jument",
+  "page": 27,
+  "dep": "Finistère",
+  "hauteur": "47,40 mètres",
+  "feu": "rouge, trois éclats groupés en 12 secondes",
+  "portee": "10 milles",
+  "optique": "en verre taillé, toujours en place mais sans fonction opérationnelle. Fanal à dels de 3 x 10 watts",
+  "annees": [
+   1911,
+   2017
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 24,
+  "nom": "Stiff",
+  "page": 28,
+  "dep": "Finistère",
+  "hauteur": "32,40 mètres",
+  "feu": "rouge à 2 éclats groupés toutes les 20 secondes",
+  "portee": "22 milles",
+  "optique": "tournante à 4 panneaux, distance focale : 0,70 m, lampe : 250 watts",
+  "annees": [
+   1685,
+   1700,
+   1926,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 25,
+  "nom": "Créac'h",
+  "page": 29,
+  "dep": "Finistère",
+  "hauteur": "54,85 mètres",
+  "feu": "blanc à deux éclats groupés tournants toutes les 10 secondes",
+  "portee": "31 milles",
+  "optique": "quatre lentilles constituées chacune de deux panneaux. La disposition sur deux étages est unique en son genre. 4 lampes halogènes de 1000 watts Depuis 1983, le musée des Phares et Balises est installé dans l'ancienne centrale électrique au",
+  "annees": [
+   1600,
+   1863,
+   1888,
+   1969,
+   1983,
+   1995,
+   2011,
+   2025
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 26,
+  "nom": "Nividic",
+  "page": 30,
+  "dep": "Finistère",
+  "hauteur": "35,55 mètres",
+  "feu": "neuf scintillements rapides groupés",
+  "portee": "6 milles",
+  "optique": "d'horizon, lampe à dels de 12 watts Finistère",
+  "annees": [
+   1916,
+   1930,
+   1936,
+   1952,
+   1996,
+   2000,
+   2017
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 27,
+  "nom": "Kéréon",
+  "page": 31,
+  "dep": "Finistère",
+  "hauteur": "47,25 mètres",
+  "feu": "3 occultations toutes les 12 secondes",
+  "portee": "17 milles",
+  "optique": "fixe, distance focale : 0,9 mètre",
+  "annees": [
+   1909,
+   1916,
+   2017
+  ],
+  "allumage": 1916,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 28,
+  "nom": "Lanildut",
+  "page": 32,
+  "dep": "Finistère",
+  "hauteur": "5,4 mètres",
+  "feu": "à secteur, 2 occultations groupées",
+  "portee": "12 milles",
+  "optique": "canon à dels 2,4 watts Finistère",
+  "annees": [
+   1894,
+   1921,
+   2016,
+   2025
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 29,
+  "nom": "Trézien",
+  "page": 33,
+  "dep": "Finistère",
+  "hauteur": "37,20 mètres",
+  "feu": "blanc à deux occultations groupées toutes les six secondes",
+  "portee": "20 milles",
+  "optique": "de direction, distance focale : 0,15 m, lampe à dels de 35 watts",
+  "annees": [
+   1894,
+   1944
+  ],
+  "allumage": 1894,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 30,
+  "nom": "Kermorvan",
+  "page": 34,
+  "dep": "Finistère",
+  "hauteur": "20,35 mètres",
+  "feu": "blanc à un éclat régulier toutes les cinq secondes",
+  "portee": "22 milles",
+  "optique": "tournante, distance focale : 0,25 m, lampe à dels de 180 watts",
+  "annees": [
+   1849
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 31,
+  "nom": "Pierres Noires",
+  "page": 35,
+  "dep": "Finistère",
+  "hauteur": "28 mètres",
+  "feu": "rouge à éclats réguliers en cinq secondes",
+  "portee": "20 milles",
+  "optique": "d'horizon à 360°",
+  "annees": [
+   1867,
+   1872,
+   2017,
+   2018
+  ],
+  "allumage": 1872,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 32,
+  "nom": "Saint-Mathieu",
+  "page": 36,
+  "dep": "Finistère",
+  "hauteur": "37 mètres",
+  "feu": "un éclat blanc toutes les 15 secondes",
+  "portee": "25 milles",
+  "optique": "tournante, distance focale : 0,50 mètre, lampe de 250 watts Feu auxiliaire : feu fixe blanc de direction, 28 milles de portée, aligné avec le phare de Kermorvan, distance focale : 0.90 m, lampe à dels de 35 watts",
+  "annees": [
+   1835,
+   1996,
+   2011
+  ],
+  "allumage": 1835,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 33,
+  "nom": "Petit Minou",
+  "page": 37,
+  "dep": "Finistère",
+  "hauteur": "26 mètres",
+  "feu": "blanc et rouge à 2 éclats toutes les 6 secondes",
+  "portee": "8 milles dans le blanc, 14 milles dans le rouge",
+  "optique": "d' horizon, distance focale : 0,50 m, lampe à dels de 180 watts",
+  "annees": [
+   1848,
+   1964,
+   1987
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 34,
+  "nom": "Portzic",
+  "page": 38,
+  "dep": "Finistère",
+  "hauteur": "58 mètres",
+  "feu": "2 occultations en 12 secondes",
+  "portee": "14 milles dans le secteur rouge, 18 milles dans le secteur blanc",
+  "optique": "d'horizon, distance focale : 0,50 m, lampe à dels de 180 watts",
+  "annees": [
+   1848,
+   1987
+  ],
+  "allumage": 1848,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 35,
+  "nom": "Millier",
+  "page": 39,
+  "dep": "Finistère",
+  "hauteur": "7,5 mètres",
+  "feu": "à secteurs blanc, vert et rouge, 2 occultations toutes le 6 secondes",
+  "portee": "16 milles",
+  "optique": "d'horizon, distance focale: 0,25 m, lampe à dels de 180 watts La maison-feu est située sur la côte sud de la baie de Douarnenez, sur la pointe du Millier, afin de sécuriser l'entrée de la baie. Le feu, construit en six mois d'après les plan",
+  "annees": [
+   1881,
+   1968,
+   1993
+  ],
+  "allumage": 1881,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 36,
+  "nom": "Tévennec",
+  "page": 40,
+  "dep": "Finistère",
+  "hauteur": "15 mètres",
+  "feu": "scintillant continu à secteurs blanc et rouge",
+  "portee": "10 milles dans le blanc et 6 milles dans le rouge",
+  "optique": "d'horizon 360°, distance focale : 0,25 m, lampe à dels de 2,8 watts La maison-feu de Tévennec (« petite falaise » en breton), située au nord du raz de Sein, est constituée d'une tour carrée accolée au pignon sud d'une maison rectangulaire",
+  "annees": [
+   1871,
+   1875,
+   1910,
+   1980,
+   2015
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 37,
+  "nom": "Ar-Men",
+  "page": 41,
+  "dep": "Finistère",
+  "hauteur": "37 mètres",
+  "feu": "blanc à trois éclats toutes les 20 secondes",
+  "portee": "21 milles",
+  "optique": "tournante six panneaux, distance focale : 0.25 m, lampe hallogène de 35 watts « Ar Men » (en français la pierre) est le nom des rochers qui composent la barrière d'écueils de près de huit milles située dans la chaussée de Sein. La mer s'y b",
+  "annees": [
+   1881,
+   1990,
+   2017,
+   2018
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 38,
+  "nom": "Île de Sein (Goulenez)",
+  "page": 42,
+  "dep": "Finistère",
+  "hauteur": "50,90 mètres",
+  "feu": "blanc à quatre éclats groupés toutes les 25 secondes",
+  "portee": "28 milles",
+  "optique": "tournante à quatre panneaux, lampe de 250 watts",
+  "annees": [
+   1839,
+   1932,
+   1944,
+   1949,
+   1952,
+   2015
+  ],
+  "allumage": 1952,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 39,
+  "nom": "Vieille",
+  "page": 43,
+  "dep": "Finistère",
+  "hauteur": "26,90 mètres",
+  "feu": "feu à secteurs (blanc, vert, rouge, obscur), rythme isophase sur 4 secondes",
+  "portee": "secteur blanc : 15 milles, secteur vert : 11 milles, secteur rouge : 11 milles",
+  "optique": "à écran tournant, lampe de 29 watts",
+  "annees": [
+   1881,
+   1882,
+   1887,
+   2008,
+   2015,
+   2022
+  ],
+  "allumage": 1887,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 40,
+  "nom": "Eckmühl",
+  "page": 44,
+  "dep": "Finistère",
+  "hauteur": "66 mètres",
+  "feu": "feu blanc à éclat régulier tournant toutes les cinq secondes",
+  "portee": "23 milles",
+  "optique": "à quatre panneaux, distance focale : 0,30 m",
+  "annees": [
+   1897,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 41,
+  "nom": "Sainte-Marine",
+  "page": 45,
+  "dep": "Finistère",
+  "hauteur": "20,20 mètres",
+  "feu": "à occultation groupée par 2 toutes les 6 secondes",
+  "portee": "13 milles dans le blanc, 8 milles dans le rouge",
+  "optique": "en verre taillé, distance focale : 0,15 m, lampe à dels de 35 watts La maison-feu de Sainte-Marine est située à l'embouchure du fleuve Odet, sur la pointe de Combrit. Elle constitue un alignement avec le phare de Bénodet pour entrer dans le",
+  "annees": [],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 42,
+  "nom": "Bénodet (Pyramide)",
+  "page": 46,
+  "dep": "Finistère",
+  "hauteur": "57 mètres",
+  "feu": "blanc à occultations groupées par 3",
+  "portee": "15 milles",
+  "optique": "de direction, distance focale : 0,25 m, lampe à dels de 80 watts Également appelé feu de la pyramide, la haute construction est située au sud-est de la commune de Bénodet. Le fût est peint en blanc, la partie supérieure en vert",
+  "annees": [
+   1887,
+   1947,
+   1950
+  ],
+  "allumage": 1887,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 43,
+  "nom": "Moutons",
+  "page": 47,
+  "dep": "Finistère",
+  "hauteur": "17,10 mètres",
+  "feu": "blanc, vert et rouge à deux occultations",
+  "portee": "15 milles dans le blanc, 11 milles dans les secteurs colorés",
+  "optique": "d'horizon, distance focale : 0,25 m, lampe à dels de 80 watts. Bâti en 1879 sur un îlot situé à 3 milles des côtes au large de Concarneau, au nord-ouest des îles des Glénan, ce phare se présente comme une tour carrée blanche accolée au pign",
+  "annees": [
+   1879,
+   2006
+  ],
+  "allumage": null,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 44,
+  "nom": "Penfret",
+  "page": 48,
+  "dep": "Finistère",
+  "hauteur": "24,25 mètres",
+  "feu": "rouge à un éclat toutes les cinq secondes",
+  "portee": "20 milles",
+  "optique": "tournante, lampe à dels de 60 watts",
+  "annees": [
+   1836,
+   1838,
+   2015
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 45,
+  "nom": "Pen Men",
+  "page": 49,
+  "dep": "Morbihan",
+  "hauteur": "27,60 mètres",
+  "feu": "blanc à quatre éclats groupés toutes les 25 secondes",
+  "portee": "29 milles",
+  "optique": "tournante, distance focale : 0,90 m, lampe de 1000 watts",
+  "annees": [
+   1835,
+   1839,
+   1927,
+   1949,
+   2015
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 46,
+  "nom": "Pointe des Chats",
+  "page": 50,
+  "dep": "Morbihan",
+  "hauteur": "15,20 mètres",
+  "feu": "à éclats toutes les 4 secondes",
+  "portee": "13 milles",
+  "optique": "tournante, distance focale : 0,10 m, lampe à dels",
+  "annees": [
+   1830,
+   1897,
+   1898,
+   2023
+  ],
+  "allumage": 1898,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 47,
+  "nom": "Port Maria",
+  "page": 51,
+  "dep": "Morbihan",
+  "hauteur": "24,80 mètres",
+  "feu": "scintillant continu",
+  "portee": "14 milles",
+  "optique": "d'horizon, distance focale : 0,30 m, lampe à dels de 75 watts",
+  "annees": [
+   1895,
+   1962
+  ],
+  "allumage": 1895,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 48,
+  "nom": "Teignouse",
+  "page": 52,
+  "dep": "Morbihan",
+  "hauteur": "20 mètres",
+  "feu": "à éclats réguliers toutes les 4 secondes",
+  "portee": "15 milles",
+  "optique": "d'horizon, distance focale : 0,25 m, lampe à dels de 75 watts",
+  "annees": [
+   1845,
+   1892
+  ],
+  "allumage": 1845,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 49,
+  "nom": "Port Navalo",
+  "page": 53,
+  "dep": "Morbihan",
+  "hauteur": "21 mètres",
+  "feu": "3 occultations groupées à 6 secteurs colorés",
+  "portee": "14 milles",
+  "optique": "d'horizon, distance focale : 0,25 mètre, lampe à dels de 75 watts",
+  "annees": [
+   1840,
+   1895,
+   1942,
+   1944
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 50,
+  "nom": "Poulains",
+  "page": 54,
+  "dep": "Morbihan",
+  "hauteur": "18 mètres",
+  "feu": "à éclats réguliers toutes les 5 secondes",
+  "portee": "23 milles",
+  "optique": "tournante , distance focale : 0,25 mètre, lampe de 75 watts",
+  "annees": [
+   1868,
+   2025
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 51,
+  "nom": "Goulphar",
+  "page": 55,
+  "dep": "Morbihan",
+  "hauteur": "52 mètres",
+  "feu": "à 2 éclats groupés blancs toutes les 10 secondes",
+  "portee": "27 milles",
+  "optique": "tournante, distance focale : 0,30 mètre, lampe de 1000 watts",
+  "annees": [
+   1826,
+   1835,
+   1836,
+   1855,
+   1882,
+   1945,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 52,
+  "nom": "Kerdonis",
+  "page": 56,
+  "dep": "Morbihan",
+  "hauteur": "13,70mètres",
+  "feu": "3 éclats groupés tournants",
+  "portee": "19 milles",
+  "optique": "tournante, distance focale : 0,25 mètre, lampe de 70 watts",
+  "annees": [
+   1870,
+   1879
+  ],
+  "allumage": 1879,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 53,
+  "nom": "Grands Cardinaux",
+  "page": 57,
+  "dep": "Morbihan",
+  "hauteur": "27 mètres",
+  "feu": "4 éclats groupés toutes les 15 secondes",
+  "portee": "14 milles",
+  "optique": "d'horizon, distance focale : 0,25 mètre, lampe à dels de 35 watts",
+  "annees": [
+   1877,
+   1880,
+   1930
+  ],
+  "allumage": 1880,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 54,
+  "nom": "Penlan",
+  "page": 58,
+  "dep": "Morbihan",
+  "hauteur": "18 mètres",
+  "feu": "6 secteurs colorés à 2 occultations groupées",
+  "portee": "15 milles",
+  "optique": "d'horizon 360° (à galets de 1888) sur support à colonne, lampe à dels de 80 watts",
+  "annees": [
+   1839,
+   1882,
+   1888,
+   1943,
+   1944,
+   1975
+  ],
+  "allumage": 1839,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 55,
+  "nom": "Four du Croisic",
+  "page": 59,
+  "dep": "Loire-Atlantique",
+  "hauteur": "27,10 mètres",
+  "feu": "à 1 éclat blanc toutes les 5 secondes",
+  "portee": "17 milles",
+  "optique": "tournante à 4 panneaux, distance focale : 0,15 mètre, lampe à dels de 29 watts",
+  "annees": [
+   1822,
+   1846,
+   1884,
+   1935,
+   1945,
+   2012
+  ],
+  "allumage": 1945,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 56,
+  "nom": "Morées",
+  "page": 60,
+  "dep": "Loire-Atlantique",
+  "hauteur": "16,20 mètres",
+  "feu": "blanc fixe à 3 éclats toutes les 12 secondes",
+  "portee": "6 milles",
+  "optique": "d'horizon 360°, distance focale : 0,1 mètre, lampe halogène de 20 watts",
+  "annees": [
+   1777,
+   1893,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 57,
+  "nom": "Aiguillon",
+  "page": 61,
+  "dep": "Loire-Atlantique",
+  "hauteur": "18,40 mètres",
+  "feu": "à 9 secteurs obscurs, rouge, blanc à 3 occultations groupées toutes les 12 secondes",
+  "portee": "13 milles dans le secteur blanc, 10 milles dans le secteur rouge",
+  "optique": "d'horizon, distance focale : 0,50m, lampe à dels de 29 watts La 1 re tour est construite en 1756, sur ordre d' Armand Louis Vignerot, duc d'Aiguillon. Surélevée en 1857 pour avoir une portée plus importante, la tourelle reste invisible de j",
+  "annees": [
+   1756,
+   1857
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 58,
+  "nom": "Grand Charpentier",
+  "page": 62,
+  "dep": "Loire-Atlantique",
+  "hauteur": "27,30 mètres",
+  "feu": "scintillant à six secteurs blancs, rouges et verts",
+  "portee": "secteur blanc : 14 milles, secteurs rouge et vert : 10 milles",
+  "optique": "d'horizon , distance focale : 0,25 mètre, lampe à dels de 75 watts La construction du phare en granite de Batz-sur-Mer est confiée à l'entreprise Renaud, par décision ministérielle du 07 mai 1884. Les méthodes de construction et la forme (b",
+  "annees": [
+   1884,
+   1888,
+   1940,
+   1945,
+   2011
+  ],
+  "allumage": 1945,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 59,
+  "nom": "Banche",
+  "page": 63,
+  "dep": "Loire-Atlantique",
+  "hauteur": "27,60 mètres",
+  "feu": "à 2 éclats groupés toutes les 6 secondes",
+  "portee": "secteur rouge : 11 milles , secteur blanc : 15 milles",
+  "optique": "d'horizon en verre taillé de 0,5 de focale, lampe à dels de 35 watts",
+  "annees": [
+   1865,
+   1893,
+   2011
+  ],
+  "allumage": 1865,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 60,
+  "nom": "Pointe Saint-Gildas",
+  "page": 64,
+  "dep": "Loire-Atlantique",
+  "hauteur": "14,80 mètres",
+  "feu": "scintillant continu à 6 secteurs blancs, rouges et verts",
+  "portee": "14 milles",
+  "optique": "horizon, distance focale : 0,25, lampe à dels de 80 watts",
+  "annees": [
+   1861,
+   1949,
+   1954,
+   1958,
+   1993
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": false
+ },
+ {
+  "n": 61,
+  "nom": "Pilier",
+  "page": 65,
+  "dep": "Vendée",
+  "hauteur": "33,80 mètres",
+  "feu": "à 3 éclats groupés toutes les 20 secondes",
+  "portee": "29 milles",
+  "optique": "tournante, distance focale : 0,7 mètre, lampe de 250 watts",
+  "annees": [
+   1829,
+   1877,
+   1945
+  ],
+  "allumage": 1945,
+  "mer": true,
+  "mh": false
+ },
+ {
+  "n": 62,
+  "nom": "Pointe des Dames",
+  "page": 66,
+  "dep": "Vendée",
+  "hauteur": "18,70 mètres",
+  "feu": "à 3 occultations groupées toutes les 12 secondes, secteurs blanc, rouge et vert",
+  "portee": "16 milles",
+  "optique": "à 360°, distance focale : 0,25 mètre, lampe à hallogénures métalliques de 150 watts",
+  "annees": [
+   1863,
+   1865,
+   1867,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 63,
+  "nom": "Fromentine",
+  "page": 67,
+  "dep": "Vendée",
+  "hauteur": "10 mètres",
+  "feu": "2 occultations groupées toutes les 6 secondes à secteurs vert, rouge et blanc",
+  "portee": "12 milles",
+  "optique": "d'horizon 270°, distance focale : 0,25 mètre, lampe à dels de 30 watts",
+  "annees": [
+   1915,
+   2012
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 64,
+  "nom": "Grand phare de l'Île d'Yeu",
+  "page": 68,
+  "dep": "Vendée",
+  "hauteur": "37,50 mètres",
+  "feu": "un éclat blanc toutes les cinq secondes",
+  "portee": "25 milles",
+  "optique": "tournante à quatre panneaux, distance focale : 0,5 mètre, lampe à hallogénures métalliques de 250 watts",
+  "annees": [
+   1830,
+   1944,
+   1950,
+   1953,
+   2011,
+   2013,
+   2015,
+   2025
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 65,
+  "nom": "Corbeaux",
+  "page": 69,
+  "dep": "Vendée",
+  "hauteur": "19,20 mètres",
+  "feu": "deux éclats rouges toutes les 15 secondes",
+  "portee": "19 milles",
+  "optique": "d'horizon tournante à 6 panneaux, distance focale : 0,25 mètre, lampe à hallogénures métalliques de 250 watts",
+  "annees": [
+   1862,
+   1944,
+   1950,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 66,
+  "nom": "Barges",
+  "page": 70,
+  "dep": "Vendée",
+  "hauteur": "31,30 mètres",
+  "feu": "deux éclats groupés rouges toutes les 10 secondes",
+  "portee": "13 milles",
+  "optique": "tournante à 4 panneaux, 0,25 de focale, feu industriel à dels",
+  "annees": [
+   1852,
+   1857,
+   1861,
+   2011
+  ],
+  "allumage": 1861,
+  "mer": true,
+  "mh": true
+ },
+ {
+  "n": 67,
+  "nom": "Armandèche",
+  "page": 71,
+  "dep": "Vendée",
+  "hauteur": "39 mètres",
+  "feu": "à trois éclats blancs groupés toutes les 15 secondes",
+  "portee": "24 milles",
+  "optique": "tournante à trois panneaux, distance focale : 0,5 mètre, lampe hallogène de 250 watts",
+  "annees": [
+   1960,
+   1968,
+   2011
+  ],
+  "allumage": null,
+  "mer": false,
+  "mh": true
+ },
+ {
+  "n": 68,
+  "nom": "Grouin du Cou",
+  "page": 72,
+  "dep": "Vendée",
+  "hauteur": "16,30 mètres",
+  "feu": "à trois éclats toutes les cinq secondes",
+  "portee": "22 milles",
+  "optique": "tournante à six panneaux, distance focale : 0,25 mètre, lampe à hallogénures métalliques de 70 watts Vendée",
+  "annees": [
+   1831,
+   1867,
+   1953,
+   2024
+  ],
+  "allumage": 1953,
+  "mer": false,
+  "mh": false
+ }
+]

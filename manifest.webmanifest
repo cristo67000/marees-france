@@ -1,7 +1,7 @@
 {
-  "name": "Marées France",
-  "short_name": "Marées",
-  "description": "Marées, coefficients, marnage et phases de lune sur les côtes de France — hors-ligne.",
+  "name": "Phares et Marées en France",
+  "short_name": "Phares & Marées",
+  "description": "Phares, marées, coefficients, marnage et phases de lune sur les côtes de France — hors-ligne.",
   "lang": "fr",
   "start_url": "./index.html",
   "scope": "./",

@@ -167,9 +167,10 @@ def parse_feux(s):
     n, n2 = 1, 0
     # 'fi' = coquille fréquente pour 'fl' ; 'gp.fl.(2)' ; '(2+1) occultations'
     m = (re.search(r"(?:gp[.\s]*)?(?:fl|fi|oc|occ|iso|q)[.\s]*\(\s*(\d+)(?:\s*\+\s*(\d+))?\s*\)", t)
-         or re.search(r"\(?(\d+)(?:\s*\+\s*(\d+))?\)?\s*(?:éclats?|occultations?|occ\b)", t)
+         or re.search(r"\(?(\d+)(?:\s*\+\s*(\d+))?\)?\s*(?:éclats?|occultations?|scintillements?|occ\b)", t)
          or re.search(r"\((\d+)\s*\+\s*(\d+)\)", t)
-         or re.search(r"group[ée]s?\s+par\s+(\d+)", t))
+         # « occultations groupées par 3 », « groupée par 2 » : nombre APRÈS
+         or re.search(r"group[ée]e?s?\s+par\s+(\d+)", t))
     if m:
         n = int(m.group(1))
         n2 = int(m.group(2)) if m.lastindex and m.lastindex >= 2 and m.group(2) else 0
@@ -179,7 +180,8 @@ def parse_feux(s):
         mode = "iso"
     elif "fixe" in t:
         mode = "fixe"
-    elif "scintillant" in t or re.search(r"\bq\b", t):
+    elif "scintill" in t or re.search(r"\bq\b", t):
+        # scintillant / scintillements : succession rapide -> au moins 6
         mode, n = "flash", max(n, 6)
     else:
         mode = "flash"
