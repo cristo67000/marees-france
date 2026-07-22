@@ -60,7 +60,7 @@ puis ouvrir http://localhost:8123
   lune dessinée jour par jour, % d'éclairement, coefficients, prochaines
   pleine/nouvelle lunes. Les heures s'adaptent au lieu (port ouvert ou centre
   de la carte).
-- **Phares** : **103 phares** (Cordouan, Créac'h, la Jument, Ar-Men, l'île
+- **Phares** : **110 phares** (Cordouan, Créac'h, la Jument, Ar-Men, l'île
   Vierge, les Roches-Douvres, Tévennec, Nividic…) apparaissent en zoomant sur
   la côte (icône tour + faisceaux ; le bouton phare les masque/affiche).
   Toucher un phare ouvre sa fiche : **photo** (Wikimedia Commons, crédit
@@ -78,6 +78,15 @@ puis ouvrir http://localhost:8123
   reprises que les **données factuelles** (hauteur, feu, portée, optique,
   dates) : sa prose est © DIRM NAMO et n'est pas reproduite ; les textes de
   présentation sont propres à l'app et les photos viennent de Commons.
+
+  Façade **Manche Est - Mer du Nord** (Nord, Pas-de-Calais, Somme,
+  Seine-Maritime, Calvados, Manche) : la couverture est désormais celle de la
+  **liste officielle de la DIRM MEMN**, soit ses **21 phares** — les 7 qui
+  manquaient ont été ajoutés (Ault, Berck, digue Carnot à Boulogne,
+  Ouistreham, Ver-sur-Mer, fort de l'Ouest à Cherbourg, Chausey). Les rythmes
+  et portées viennent des fiches techniques DIRM (licence Etalab 2.0) ou, à
+  défaut, des balises seamark d'OpenStreetMap ; `tools/scan_phares_nord.py`
+  les relève et `tools/sync_memn.py` les impose à ce que donne Wikipédia.
 
 - **Me localiser** (bouton cible, optionnel) : au premier appui, un écran
   explique à quoi sert la position **avant** l'invite du système ; une fois

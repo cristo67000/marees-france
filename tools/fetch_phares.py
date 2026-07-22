@@ -17,6 +17,10 @@ API = "https://fr.wikipedia.org/w/api.php"
 UA = {"User-Agent": "MareesFranceApp/1.0 (usage personnel; contact: cristo67000@gmail.com)"}
 
 TITLES = {
+    "ault": "Phare d'Ault", "berck": "Phare de Berck",
+    "carnot": "Phare de Boulogne-sur-Mer", "ouistreham": "Phare de Ouistreham",
+    "ver-sur-mer": "Phare de Ver-sur-Mer",
+    "fort-ouest": "Phare du fort de l'Ouest", "chausey": "Phare de Chausey",
     "risban": "Phare du Risban", "calais-ph": "Phare de Calais",
     "gris-nez": "Phare du cap Gris-Nez", "alprech": "Phare d'Alprech",
     "touquet": "Phare de la Canche", "cayeux": "Phare de Cayeux",
